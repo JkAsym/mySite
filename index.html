@@ -1,81 +1,246 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic" rel="stylesheet">
-    <title>Портфолио Junior верстальщика</title>
-  </head>
-
-  <body id="page" class="dark-theme">
-    <header class="page-header">
-      <div class="container">
-        <a class="header-email"
-          href="https://mail.ru/mysa-dag@mail.ru">mysa-dag@mail.ru</a>
-        <a class="header-phone" href="tel:+79894721997">+7 (989) 472 - 19 - 97</a>
-      </div>
-      <div>
-        <button class="btn theme-btn" type="button">Сменить тему</button>
-      </div>
-    </header>
-        <section class="hero-image">
-          <div class="container">
-            <h1 class="heading">Абдулаев Муса</h1>
-            <p>Junior верстальщик</p>
-          </div>
-        </section>
-
-        <section class="intro">
-          <div class="container">
-            <h2 class="subheading">Давайте познакомимся</h2>
-            <figure class="user-image">
-              <img src="files/user.jpg" width="560" height="680" alt="Фотография Босса">
-            </figure>
-            <div>
-              <h3>Пара слов о себе</h3>
-              <p>Могу верстать, могу не верстать. 
-                Могу заставить верстать других, могу угнетать тех, кто плохо верстает.
-
-                Могу объяснить, почему средств, 
-                выделенных на вёрстку 10 страниц, 
-                хватило на 2 (причём одна свёрстана силами волонтёров)
-                и ещё нужно доплатить дизайнеру за амортизацию мышки. 
-                Могу сделать так, чтобы мне поверили.</p>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/login-modal.css">
+        <title>Project first</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__logo">
+                <img src="img/logo.png" alt="logo">
             </div>
-            <div class="skills">
-              <h3>Мои навыки</h3>
-              <dl class="skills-list">
-                <dt class="skill-html">HTML</dt>
-                <dd class="level" style="width: 80%;"><div>80%</div></dd>
-                <dt class="skill-css">CSS</dt>
-                <dd class="level" style="width: 75%;"><div>75%</div></dd>
-                <dt class="skill-js">Java Script</dt>
-                <dd class="level" style="width: 40%;"><div>40%</div></dd>
-              </dl>
+            <div class="header__menu">
+                <ul class="nav">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">Продление</a></li>
+                    <li><a href="#">Прайс</a></li>
+                    <li><a href="#">Помощь</a></li>
+                </ul>
             </div>
-
-          </div>
-        </section>
-
-      <section class="portfolio">
-        <div class="container">
-          <h2 class="subheading">Мои работы</h2>
-          <figure class="project-image">
-            <img src="files/project_1.JPG" width="900" height="400" alt="Проект первый. Начало">
-          </figure>
-          <h3>Dart - сервис-менеджер</h3>
-          <p>Мой первый сайт</p>
-          <a class="button" href="source/project/index.html">Открыть страницу</a>
+            <button class="btn-form openmodal" type="button">Войти</button>
+            <div class="modal" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-header">
+                    <h2>Авторизация</h2>
+                    <a href="#" class="btn-close closemodal" aria-hidden="true">&times;</a>
+                  </div>
+                  <div class="modal-body">
+                    <input type="email" name="e-mail" placeholder="E-mail" size="20" /><br>
+                    <input type="password" name="password" placeholder="Пароль" size="20" /></div>
+                  <div class="modal-footer">
+                    <button type="submit" class="btn">Войти</button>
+                  </div>
+                </div>
+              </div>
+            <div class="header__container">
+                <div class="header__inner">
+                    <div class="header__text">
+                        <h1>LOREM IPSUM DOLOR SIT AMET</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamc.</p>
+                    </div>
+                    <button class="btn-buy" type="submit">КУПИТЬ СЕЙЧАС</button>
+                    <button class="btn-free" type="submit">ПОПРОБОВАТЬ БЕСПЛАТНО</button>
+                </div>
+                <div class="header__media">
+                    <video width="600px" height="320px" controls>
+                        <source src="videos/header-video.mp4" type="video/mp4">
+                        <source src="videos/header-video.ogv" type="video/ogg">
+                    </video>
+                </div>
+            </div>
+        </header>
+        <div class="title__info">
+            <h1 class="title-h1">Простой и полезный</h1>
+            <p class="title-info">Инструмент для управления проектами</p>
+            <p class="info-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
         </div>
-      </section>
-
-    <footer class="page-footer">
-      <div class="container">
-        <a class="footer-email"
-          href="https://mail.ru/mysa-dag@mail.ru">mysa-dag@mail.ru</a>
-        <a class="footer-phone" href="tel:+79894721997">+7 (989) 472 - 19 - 97</a>
-      </div>
-    </footer>
-    <script src="js/btn-change-theme.js"></script>
-  </body>
+        <div class="box__change">
+            <div class="box__1">
+                <img src="img/icon-1.png" width="68px" height="70px" alt="icon">
+                <h3>Сроки</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua.</p>
+            </div>
+            <div class="box__2">
+                <img src="img/icon-2.png" width="60px" height="70px" alt="icon">
+                <h3>Менеджер</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua.</p>
+            </div>
+            <div class="box__3">
+                <img src="img/icon-3.png" width="68px" height="70px" alt="icon">
+                <h3>Сервис</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+        <div class="started">
+            <button class="btn-started">НАЧАТЬ</button>
+        </div>
+        <div class="stat__container">
+            <div class="business general">
+                <div class="stat__icon"><img src="img/icon-business.png" width="60px" height="60px" alt="icon-business"></div>
+                <div class="stat__number"><p>12000+ <br>Бизнесов</p></div>
+            </div>
+            <div class="downloads general">
+                <div  class="stat__icon"><img src="img/icon-downloads.png" width="60px" height="60px" alt="icon-downloads"></div>
+                <div  class="stat__number"><p>60000+ <br>Загрузок</p></div>
+            </div>
+            <div class="installs general">
+                <div class="stat__icon"><img src="img/icon-installs.png" width="60px" height="60px" alt="icon-installs"></div>
+                <div class="stat__number"><p>30000+ <br>Установок</p></div>
+            </div>
+            <div class="users general">
+                <div class="stat__icon"><img src="img/icon-users.png" width="60px" height="60px" alt="icon-users"></div>
+                <div class="stat__number"><p>40000+ <br>Пользователей</p></div>
+            </div>
+        </div>
+        <div class="services__container">
+            <div class="title__info">
+                <h1 class="title-h1">Сервисы</h1>
+                <p class="info-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna</p>
+            </div>
+            <div class="box__statistics">
+                <div class="icon__text">
+                    <img class="ico-stat" src="img/icon-statistics.png" alt="icon-statistics">
+                    <h3>СТАТИСТИКА</h3>
+                    <button class="btn-arr" type="button"><img src="img/arrow.png"></button>
+                </div>
+                <div class="img__text">
+                    <br><img src="img/stat-img.jpeg" alt="statistics">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                </div>
+            </div>
+            <div class="box__inbox">
+                <div class="icon__text">
+                    <img class="ico-stat" src="img/mail-inbox.png" alt="mail">
+                    <h3>ПОЧТА</h3>
+                    <button  class="btn-arr" type="button"><img src="img/arrow.png"></button>
+                </div>
+                <div class="img__text disp-none">
+                    <br><img src="img/inbox-img.jpg">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                </div>
+            </div>
+            <div class="box__team">
+                <div class="icon__text">
+                    <img class="ico-stat" src="img/team-icon.png">
+                    <h3>КОМАНДА</h3>
+                    <button class="btn-arr" type="button"><img src="img/arrow.png"></button>
+                </div>
+                <div class="img__text disp-none">
+                    <br><img src="img/team-img.jpg">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua. Ut enim ad minim veniam</p> 
+                </div>
+            </div>
+        </div>
+        <div class="testimonials">
+            <div class="rev__title">
+                <h2>Что наши клиенты говорят о нас.</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna</p>
+                <button class="rev-btn" type="submit">НАЧАТЬ</button>
+            </div>
+            
+            <div class="reviews">
+                <button class="arr-btn-up" type="button"><img src="img/arr-up.png"></button>
+                <div class="slider-container">
+                    <div class="slider-track">
+                        <div class="slider-item">
+                            <img src="img/avatar-user_1.png" alt="">
+                            <p><span class="name">John Doe</span> <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore 
+                                magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                        </div>
+                        <div class="slider-item">
+                            <img src="img/avatar-user_2.png" alt="">
+                            <p><span class="name">Khalessi</span> <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore 
+                                magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                        </div>
+                        <div class="slider-item">
+                            <img src="img/avatar-user_3.png" alt="">
+                            <p><span class="name">Jean Boe</span> <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore 
+                                magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="arr-btn-down" type="button"><img src="img/arr-down.png"></button>
+            </div>
+            
+        </div>
+        <div class="team__container">
+            <div class="team__title">
+                <h1>Наша Команда</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna</p>
+            </div>
+            <div class="team__avatars">
+                <img class="inherit-ava" src="img/avatar-team_1.png" alt="avatar#1">
+                <img class="main-ava" src="img/avatar-team_2.png" alt="avatar#2">
+                <img class="inherit-ava" src="img/avatar-team_3.png" alt="avatar#3">
+            </div>
+            <div class="name__bio">
+                <div class="main__bio">
+                    <h3>Sophie Turner</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt, lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+                </div>
+            </div>
+            <div class="social">
+                <a href="#"><img src="img/social-ico_1.png" alt="icon-1" style="padding-bottom: 2px;"></a>
+                <a href="#"><img src="img/social-ico_2.png" alt="icon-2" style="padding-bottom: 1px;"></a>
+                <a href="#"><img src="img/social-ico_3.png" alt="icon-3"></a>
+                <a href="#"><img src="img/social-ico_4.png" alt="icon-4" style="padding-bottom: 1px;"></a>
+                <a href="#"><img src="img/social-ico_5.png" alt="icon-5" style="padding-bottom: 4px;"></a>
+            </div>
+        </div>
+        <div class="contact__form">
+            <div class="form__title">
+                <h1>Свяжитесь с нами</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna</p>
+            </div>
+            <div id="inline">
+                <form id="contact" action="#" method="POST" name="contact">
+                    <input id="firstName" class="txt" name="first-name" type="name" placeholder="Ваше имя">
+                    <input id="lastName" class="txt" name="last-name" type="name" placeholder="Ваша фамилия" style="margin-left: 40px;">
+                    <input id="email" class="txt" name="email" type="email" placeholder="Ваш e-mail">
+                    <input id="phone" class="txt" name="phone" type="phone" placeholder="Ваш телефон" style="margin-left: 40px;">
+                    <textarea id="msg" class="txt-area" name="massage" placeholder="Ваше сообщение:" cols="30" rows="10"></textarea>
+                    <div class="checkbox__btn">
+                        <p><input id="checkbox" class="checkbox" type="checkbox" name="checkbox">Подписаться на рассылку новостей</p>
+                        <button id="send" class="form-btn" type="submit">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer class="footer">
+                <div class="footer__inner__up">
+                    <img src="img/logo.png" alt="logo">
+                    <div class="about__us">
+                        <ul class="about-us-list">
+                            <li style="padding-right: 35px;">Политика конфиденциальности</li>
+                            <li style="list-style-type: disc; padding-left: 10px;">О нас</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__inner__down">
+                    <ul class="nav">
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Продление</a></li>
+                        <li><a href="#">Прайс</a></li>
+                        <li style="margin-right: 0;"><a href="#">Помощь</a></li>
+                    </ul>
+                    <div class="footer__social">
+                        <a href="#"><img src="img/social-ico_2.png" alt="icon-2"></a>
+                        <a href="#"><img src="img/social-ico_1.png" alt="icon-1"></a>
+                        <a href="#"><img src="img/social-ico_3.png" alt="icon-3"></a>
+                        <a href="#"><img src="img/social-ico_4.png" alt="icon-4"></a>
+                        <a href="#"><img src="img/social-ico_5.png" alt="icon-5" style="padding-bottom: 3px;"></a>
+                    </div>
+                </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="js/modal-form.js"></script>
+        <script src="js/services-box-none.js"></script>
+        <script src="js/team-sliders.js"></script>
+    </body>
 </html>
