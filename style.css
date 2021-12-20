@@ -11,13 +11,13 @@ body {
 .dark-theme {
   color: #f2f2f2;
   background-color: #080208;
-  background-image: url("img/hero-bg_d.jpg");
+  background-image: url("../img/hero-bg_d.jpg");
 }
 
 .light-theme {
   color: #222222;
   background-color: #f2f4f6;
-  background-image: url("img/hero-bg_l.jpg");
+  background-image: url("../img/hero-bg_l.jpg");
 }
 
 .container {
@@ -54,22 +54,22 @@ body {
 
 .dark-theme .header-email {
   padding-left: 30px;
-  background-image: url("img/icon-email.svg");
+  background-image: url("../img/icon-email.svg");
 }
 
 .light-theme .header-email {
   padding-left: 30px;
-  background-image: url("img/icon-email-header_l.svg");
+  background-image: url("../img/icon-email-header_l.svg");
 }
 
 .dark-theme .header-phone {
   padding-left: 25px;
-  background-image: url("img/icon-phone.svg");
+  background-image: url("../img/icon-phone.svg");
 }
 
 .light-theme .header-phone {
   padding-left: 25px;
-  background-image: url("img/icon-phone-header.svg");
+  background-image: url("../img/icon-phone-header.svg");
 }
 
 .btn {
@@ -211,11 +211,15 @@ body {
 }
 
 .skill-html {
-  background-image: url("img/icon-html.svg");
+  background-image: url("../img/icon-html.svg");
 }
 
 .skill-css {
-  background-image: url("img/icon-css.svg");
+  background-image: url("../img/icon-css.svg");
+}
+
+.skill-js {
+  background-image: url("../img/icon-js.svg");
 }
 
 .level {
@@ -318,12 +322,22 @@ body {
   color: inherit;
 }
 
-.footer-email {
+.dark-theme .footer-email {
   padding-left: 30px;
-  background-image: url("img/icon-email.svg");
+  background-image: url("../img/icon-email.svg");
 }
 
-.footer-phone {
+.dark-theme .footer-phone {
   padding-left: 25px;
-  background-image: url("img/icon-phone.svg");
+  background-image: url("../img/icon-phone.svg");
+}
+
+.light-theme .footer-email {
+  padding-left: 30px;
+  background-image: url("../img/icon-email-footer_l.svg");
+}
+
+.light-theme .footer-phone {
+  padding-left: 25px;
+  background-image: url("../img/icon-phone-footer_l.svg");
 }
